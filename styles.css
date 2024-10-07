@@ -1,0 +1,122 @@
+/* Full height body for centering */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0c24f;
+    height: 100%;
+    background-image: url('background.jpeg'); /* Optional: Replace with actual image URL */
+    background-size: cover;
+    background-position: center;
+}
+
+#intro-container, #quiz-container, #result-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Style for the quiz question */
+#quiz h3 {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #1d1d1d;
+    text-align: center;
+}
+
+/* Option box styling */
+.option-box {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+/* Hover effect for option boxes */
+.option-box:hover {
+    background-color: #f4f4f4;
+    border-color: #007bff;
+}
+
+/* Option letter styling (A, B, C, D) */
+.option-letter {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.option-A .option-letter {
+    background-color: #007bff;
+}
+.option-B .option-letter {
+    background-color: #28a745;
+}
+.option-C .option-letter {
+    background-color: #ffc107;
+}
+.option-D .option-letter {
+    background-color: #17a2b8;
+}
+
+.selected {
+    background-color: #d1e7ff; /* Light blue to indicate selection */
+    border-color: #007bff;
+}
+
+/* Scale effect when option is clicked */
+.enlarge {
+    animation: enlarge 0.3s ease; /* Animation duration of 0.3 seconds */
+}
+
+/* Keyframes for enlarging the content */
+@keyframes enlarge {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Slight enlargement */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Style for the radio button, hiding it */
+input[type="radio"] {
+    display: none;
+}
+
+/* Next and Submit buttons */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
